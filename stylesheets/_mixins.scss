@@ -1,0 +1,15 @@
+@import '_vars';
+
+@mixin vertical-align($percent) {
+  position: 			       	relative;
+  top: 					        $percent;
+  -webkit-transform: 	   		translateY(-$percent);
+  -ms-transform: 		     	translateY(-$percent);
+  transform: 			       	translateY(-$percent);
+}
+
+@mixin drop-shadow() {
+	-webkit-box-shadow: 0 8px 6px -6px $light-gray;
+     -moz-box-shadow: 0 8px 6px -6px $light-gray;
+          box-shadow: 0 8px 6px -6px $light-gray;
+}
