@@ -9,9 +9,9 @@
 }
 
 @mixin drop-shadow($colour) {
-	-webkit-box-shadow: 0 8px 6px -6px $colour;
-     -moz-box-shadow: 0 8px 6px -6px $colour;
-          box-shadow: 0 8px 6px -6px $colour;
+	-webkit-box-shadow:     0 8px 6px -6px $colour;
+     -moz-box-shadow:     0 8px 6px -6px $colour;
+          box-shadow:     0 8px 6px -6px $colour;
 }
 
 @mixin dynamic-sizing() {
@@ -20,4 +20,11 @@
   background-size:       cover;
   height:                auto;
   width:                 auto;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius:  $radius;
+  -moz-border-radius:     $radius;
+  -ms-border-radius:      $radius;
+  border-radius:          $radius;
 }
