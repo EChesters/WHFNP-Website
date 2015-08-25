@@ -78,7 +78,7 @@ nav {
 	}
 
 	.cell {
-		display: inline-block;
+		display: inline-grid;
 		padding: 5px;
 		min-height: 30px;
 		vertical-align: middle;
@@ -106,9 +106,15 @@ nav {
 	padding: 25px 0;
 }
 
+.small-margin-vertical-sides {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
 p {
 	&.block-p {
 		line-height: 2em;
+		padding-bottom: 20px;
 		font-weight: $font-light;
 	}
 
@@ -121,6 +127,11 @@ p {
 h2 {
 	font-weight: $font-xlight;
 	font-size: $h2-size;
+}
+
+h3 {
+	font-weight: $font-xlight;
+	font-size: $h3-size;
 }
 
 .social-media-link {
@@ -150,5 +161,22 @@ a.button {
 		background-color: $secondary;
 		@include border-radius(5px);
 		text-decoration: none;
+		display: inline-block;
+		// margin: 5px;
 	}
+}
+
+/* IMAGES --------------------------------------- */
+img {
+	@include border-radius(5px);
+	&.half-grid {
+		width: 50%;
+	}
+}
+
+/* SECTIONS ------------------------------------- */
+.central {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
 }
