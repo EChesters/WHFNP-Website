@@ -58,7 +58,7 @@ nav {
 }
 
 #banner {
-	max-height: 250px;
+	max-height: 450px;
 	overflow: hidden;
 	img {
 		@include dynamic-sizing();
@@ -80,6 +80,8 @@ nav {
 	.cell {
 		display: inline-block;
 		padding: 5px;
+		min-height: 30px;
+		vertical-align: middle;
 		// border: 1px solid black;
 	}
 
@@ -134,6 +136,10 @@ h2 {
 .text-centre {
 	text-align: center;
 	margin: 0 auto;
+}
+
+.text-right {
+	text-align: right;
 }
 
 /* BUTTONS --------------------------------------- */

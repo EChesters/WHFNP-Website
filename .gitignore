@@ -3,4 +3,4 @@
 /.sass-cache
 *.css.map
 stylesheets/.sass-cache/
-*.scssc
+.scssc
