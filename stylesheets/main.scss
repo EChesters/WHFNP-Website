@@ -103,7 +103,7 @@ nav {
 }
 
 .extra-padding-vertical-sides {
-	padding: 25px 0;
+	padding: 25px 0 !important;
 }
 
 .small-margin-vertical-sides {
@@ -134,6 +134,14 @@ h3 {
 	font-size: $h3-size;
 }
 
+h4 {
+	&.quote {
+		font-family: $quote-font;
+		font-size: $h4-size;
+		font-style: italic;
+	}
+}
+
 .social-media-link {
 	color: $black;
 	text-decoration: none;
@@ -155,14 +163,18 @@ h3 {
 
 /* BUTTONS --------------------------------------- */
 a.button {
-	&.secondary{
-		padding: 15px 25px;
-		color: $white;
+	padding: 15px 25px;
+	color: $white;
+	@include border-radius(5px);
+	text-decoration: none;
+	display: inline-block;
+
+	&.primary {
+		background-color: $primary;
+	}
+
+	&.secondary {
 		background-color: $secondary;
-		@include border-radius(5px);
-		text-decoration: none;
-		display: inline-block;
-		// margin: 5px;
 	}
 }
 
