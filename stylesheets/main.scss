@@ -1,5 +1,6 @@
 @import '_vars';
 @import '_mixins';
+@import '_components';
 
 body {
 	background-color: $light-gray;
@@ -102,6 +103,19 @@ nav {
 	}
 }
 
+.question {
+	height: 100px;
+	h5 {
+		font-size: $h5-question-size;
+		font-weight: $font-regular;
+	}
+
+	p {
+		padding-left: 6%;
+		line-height: 1.5em;
+	}
+}
+
 .extra-padding-vertical-sides {
 	padding: 25px 0 !important;
 }
@@ -109,6 +123,11 @@ nav {
 .small-margin-vertical-sides {
 	margin-top: 5px;
 	margin-bottom: 10px;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+	max-width: 100%;
 }
 
 p {
