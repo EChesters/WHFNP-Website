@@ -61,7 +61,8 @@ nav {
   margin: 0 auto;
   width: 85%;
   min-height: 1000px;
-  padding-top: 500px; }
+  padding-top: 500px;
+  overflow: hidden; }
 
 #banner {
   max-height: 450px;
@@ -150,6 +151,9 @@ nav {
 
 .margin-left {
   margin-left: 50px; }
+
+.margin-right {
+  margin-right: 50px; }
 
 .small-margin-vertical-sides {
   margin-top: 5px;
