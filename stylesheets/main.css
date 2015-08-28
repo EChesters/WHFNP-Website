@@ -60,18 +60,33 @@ nav {
   border: #dadada 1px solid;
   margin: 0 auto;
   width: 85%;
-  min-height: 1000px; }
+  min-height: 1000px;
+  padding-top: 500px; }
 
 #banner {
   max-height: 450px;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
   #banner img {
     max-width: 180%;
     max-height: 120%;
     background-size: cover;
     height: auto;
     width: auto;
-    width: 100%; }
+    width: 100%;
+    position: absolute; }
+  #banner h2 {
+    position: absolute;
+    font-weight: 300;
+    margin-top: 225px;
+    font-size: 2em;
+    width: 76%;
+    display: block;
+    font-style: italic;
+    line-height: 1.5em;
+    text-align: center;
+    left: 50%;
+    margin-left: -38%; }
 
 .grid {
   display: block;

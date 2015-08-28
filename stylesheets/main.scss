@@ -56,14 +56,32 @@ nav {
 	margin: 0 auto;
 	width: 85%;
 	min-height: 1000px;
+	padding-top: 500px;
 }
 
 #banner {
 	max-height: 450px;
 	overflow: hidden;
+	width: 100%;
+
 	img {
 		@include dynamic-sizing();
 		width: 100%;
+		position: absolute;
+	}
+
+	h2 {
+		position: absolute;
+		font-weight: $font-light;
+		margin-top: 225px;
+		font-size: 2em;
+		width: 76%;
+		display: block;
+		font-style: italic;
+		line-height: 1.5em;
+		text-align: center;
+		left: 50%;
+		margin-left: -38%;
 	}
 }
 
@@ -99,7 +117,6 @@ nav {
 	}
 
 	.center {
-		// float: center;
 		width: 100%;
 		margin: 0 auto;
 	}
