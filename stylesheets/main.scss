@@ -104,11 +104,11 @@ nav {
 	}
 
 	.cell {
-		display: inline-grid;
+		display: inline-block;
 		padding: 5px;
 		min-height: 30px;
 		vertical-align: middle;
-		overflow: auto;
+		overflow: visible;
 		// border: 1px solid black;
 	}
 
@@ -144,7 +144,8 @@ nav {
 }
 
 .extra-padding-vertical-sides {
-	padding: 25px 0 !important;
+	padding-top: 25px !important;
+	padding-bottom: 25px !important;
 }
 
 .extra-padding-horizontal-sides {
@@ -153,6 +154,10 @@ nav {
 
 .extra-margin-top {
 	margin-top: 25px;
+}
+
+.extra-margin-bottom {
+	margin-bottom: 25px;
 }
 
 .margin-left {
@@ -189,6 +194,12 @@ p {
 		font-size: $p-quote-size;
 		font-style: italic;
 		margin: 10px 0;
+	}
+}
+
+span {
+	&.bold {
+		font-weight: $font-regular;
 	}
 }
 
@@ -266,6 +277,10 @@ a.button {
 
 	&.medium {
 		height: 300px;
+	}
+
+	&.volunteer {
+		width: 96px;
 	}
 }
 
