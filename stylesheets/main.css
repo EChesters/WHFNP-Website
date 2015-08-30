@@ -154,6 +154,9 @@ nav {
 .extra-padding-horizontal-sides {
   padding: 0 50px; }
 
+.extra-margin-top {
+  margin-top: 25px; }
+
 .margin-left {
   margin-left: 50px; }
 
@@ -234,10 +237,15 @@ a.button {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  height: 200px;
+  height: 120px;
   width: auto;
   overflow: hidden; }
   .img-container img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     max-width: 180%;
     max-height: 120%;
     background-size: cover;
@@ -253,6 +261,15 @@ img {
     width: 50%; }
   img.volunteer {
     height: 200px; }
+  img.partner {
+    width: 200px;
+    text-align: center;
+    max-height: 150px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    border-radius: 0px; }
 
 /* SECTIONS ------------------------------------- */
 .central {

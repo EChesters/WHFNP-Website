@@ -150,6 +150,10 @@ nav {
 	padding: 0 50px;
 }
 
+.extra-margin-top {
+	margin-top: 25px;
+}
+
 .margin-left {
 	margin-left: 50px;
 }
@@ -250,11 +254,12 @@ a.button {
 /* IMAGES --------------------------------------- */
 .img-container {
 	@include border-radius(5px);
-	height: 200px;
+	height: 120px;
 	width: auto;
 	overflow: hidden;
 
 	img {
+		@include vertical-align(50%);
 		@include dynamic-sizing();
 	}
 }
@@ -267,6 +272,14 @@ img {
 
 	&.volunteer {
 		height: 200px;
+	}
+
+	&.partner {
+		width: 200px;
+		text-align: center;
+		max-height: 150px;
+		margin-bottom: 10px;
+		@include border-radius(0px);
 	}
 }
 
