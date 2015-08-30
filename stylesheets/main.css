@@ -128,7 +128,8 @@ nav {
     display: inline-grid;
     padding: 5px;
     min-height: 30px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    overflow: auto; }
   .grid .right {
     float: right; }
   .grid .left {
@@ -251,6 +252,8 @@ a.button {
     background-size: cover;
     height: auto;
     width: auto; }
+  .img-container.medium {
+    height: 300px; }
 
 img {
   -webkit-border-radius: 5px;
@@ -270,6 +273,12 @@ img {
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     border-radius: 0px; }
+  img.project {
+    max-width: 180%;
+    max-height: 120%;
+    background-size: cover;
+    height: auto;
+    width: auto; }
 
 /* SECTIONS ------------------------------------- */
 .central {

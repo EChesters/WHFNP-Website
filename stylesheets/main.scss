@@ -108,6 +108,7 @@ nav {
 		padding: 5px;
 		min-height: 30px;
 		vertical-align: middle;
+		overflow: auto;
 		// border: 1px solid black;
 	}
 
@@ -262,6 +263,10 @@ a.button {
 		@include vertical-align(50%);
 		@include dynamic-sizing();
 	}
+
+	&.medium {
+		height: 300px;
+	}
 }
 
 img {
@@ -280,6 +285,12 @@ img {
 		max-height: 150px;
 		margin-bottom: 10px;
 		@include border-radius(0px);
+	}
+
+	&.project {
+		// height: 300px;
+		@include dynamic-sizing();
+
 	}
 }
 
