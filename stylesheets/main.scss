@@ -215,9 +215,10 @@ h3 {
 }
 
 h4 {
+	font-size: $h4-size;
+	font-weight: 100;
 	&.quote {
 		font-family: $quote-font;
-		font-size: $h4-size;
 		font-style: italic;
 	}
 }
