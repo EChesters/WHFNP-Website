@@ -178,6 +178,10 @@ nav {
 	max-width: 100%;
 }
 
+.vertical-middle {
+	@include vertical-align(-50%);
+}
+
 p {
 	&.block-p {
 		line-height: 2em;

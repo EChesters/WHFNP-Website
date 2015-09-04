@@ -176,6 +176,13 @@ nav {
   overflow: hidden;
   max-width: 100%; }
 
+.vertical-middle {
+  position: relative;
+  top: -50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%); }
+
 p.block-p {
   line-height: 2em;
   padding-bottom: 20px;
