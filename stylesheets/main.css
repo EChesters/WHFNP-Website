@@ -29,7 +29,8 @@ nav {
   padding: 5px 0;
   -webkit-box-shadow: 0 8px 6px -6px #dadada;
   -moz-box-shadow: 0 8px 6px -6px #dadada;
-  box-shadow: 0 8px 6px -6px #dadada; }
+  box-shadow: 0 8px 6px -6px #dadada;
+  background-color: #ffffff; }
   nav .nav-logo {
     display: inline-block;
     float: left;
@@ -82,9 +83,8 @@ nav {
     border-radius: 0px; }
   #banner h2 {
     color: #ffffff;
-    position: absolute;
+    position: relative;
     font-weight: 300;
-    margin-top: 17%;
     font-size: 2em;
     width: 76%;
     display: block;
@@ -93,6 +93,8 @@ nav {
     left: 50%;
     margin-left: -38%;
     text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.7); }
+    #banner h2:first-child {
+      margin-top: 17%; }
 
 .grid {
   display: block;
@@ -186,7 +188,8 @@ nav {
 p.block-p {
   line-height: 2em;
   padding-bottom: 20px;
-  font-weight: 300; }
+  font-weight: 300;
+  word-wrap: keep-all; }
 p.mini-title {
   font-weight: 400; }
 p.quote {
@@ -303,5 +306,15 @@ img {
   margin: 0 auto;
   text-align: center;
   width: 100%; }
+  .central .text-left {
+    text-align: left; }
+
+.box-bg {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #111111; }
 
 /*# sourceMappingURL=main.css.map */
