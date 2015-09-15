@@ -88,6 +88,7 @@ nav {
 
 		&:first-child {
 			margin-top: 17%;
+			font-size: $h2-size;
 		}
 	}
 }
@@ -334,4 +335,5 @@ img {
 	@include border-radius(5px);
 	background-color: $white;
 	border: 1px solid $black;
+	margin-top: 150px;
 }

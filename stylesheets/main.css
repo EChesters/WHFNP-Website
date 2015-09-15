@@ -94,7 +94,8 @@ nav {
     margin-left: -38%;
     text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.7); }
     #banner h2:first-child {
-      margin-top: 17%; }
+      margin-top: 17%;
+      font-size: 3em; }
 
 .grid {
   display: block;
@@ -315,6 +316,7 @@ img {
   -ms-border-radius: 5px;
   border-radius: 5px;
   background-color: #ffffff;
-  border: 1px solid #111111; }
+  border: 1px solid #111111;
+  margin-top: 150px; }
 
 /*# sourceMappingURL=main.css.map */

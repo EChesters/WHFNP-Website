@@ -3,7 +3,7 @@
 /* COLOURS ------------------------------*/
 /* FONTS --------------------------------*/
 body {
-  background-color: #68cbf5; }
+  background-color: #ffffff; }
 
 /* Parallax base styles
 --------------------------------------------- */
@@ -57,34 +57,52 @@ body {
   z-index: 5;
   /* slide over group 2 */ }
 
+#group1 .parallax__layer--fore {
+  background: url("../images/text-layer-1.png");
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100vh; }
+
 #group1 .parallax__layer--base {
   background: url("../images/banner-blur.jpg");
   background-size: cover;
-  max-height: 100vh; }
+  min-height: 100vh !important; }
 
 #group2 {
-  height: 500px;
   z-index: 3;
-  /* slide under groups 1 and 3 */ }
+  /* slide under groups 1 and 3 */
+  height: 300px; }
 
 #group2 .parallax__layer--back {
-  /*background-color: $logo-blue;*/ }
+  background: #ffffff;
+  height: 100px; }
 
 #group3 {
   z-index: 4;
   /* slide over group 2 and 4 */ }
 
+#group3 .parallax__layer--fore {
+  background: url("../images/text-layer-1.png");
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat; }
+
 #group3 .parallax__layer--base {
-  /*background: rgb(153,216,101);*/
-  background: url("../images/project-1.jpg");
-  background-size: cover; }
+  background: url("../images/banner-blur.jpg");
+  background-size: cover;
+  height: 550px; }
 
 #group4 {
   z-index: 2;
   /* slide under group 3 and 5 */ }
 
+#group4 .parallax__layer--back {
+  background: url("../images/IMG_4512.jpg");
+  background-size: cover; }
+
 #group4 .parallax__layer--deep {
-  background: #e86427; }
+  background: #ffffff; }
 
 #group5 {
   z-index: 3;
@@ -92,14 +110,16 @@ body {
   background-size: 250px; }
 
 #group5 .parallax__layer--base {
-  /*background-size: 250px;*/ }
+  /*background-size: 250px;*/
+  background: url("../images/project-1.jpg");
+  background-size: cover; }
 
 #group6 {
   z-index: 2;
   /* slide under group 5 and 7 */ }
 
 #group6 .parallax__layer--back {
-  background: url("../images/about-us-volunteer.jpg");
+  background: url("../images/home-1.jpg");
   background-size: cover; }
 
 #group7 {
