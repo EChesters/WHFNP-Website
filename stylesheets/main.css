@@ -303,5 +303,22 @@ img {
   margin: 0 auto;
   text-align: center;
   width: 100%; }
+  .central .text-left {
+    text-align: left; }
+
+.box-bg {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #111111;
+  margin-top: 10%;
+  /*
+  	@media only screen and (max-device-width: 1024px) 
+    					   and (-webkit-min-device-pixel-ratio: 1) {
+    		width: 100%;
+  
+  }*/ }
 
 /*# sourceMappingURL=main.css.map */
