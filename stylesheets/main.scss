@@ -335,5 +335,12 @@ img {
 	@include border-radius(5px);
 	background-color: $white;
 	border: 1px solid $black;
-	margin-top: 150px;
+	margin-top: 10%;
+/*
+	@media only screen and (max-device-width: 1024px) 
+  					   and (-webkit-min-device-pixel-ratio: 1) {
+  		width: 100%;
+
+}*/
+
 }

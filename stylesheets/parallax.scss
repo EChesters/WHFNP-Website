@@ -102,11 +102,11 @@ body {
   z-index: 2; /* slide under group 3 and 5 */
 }
 #group4 .parallax__layer--back {
-  background: url('../images/IMG_4512.jpg');
+  background: url('../images/project-1.jpg');
   background-size: cover;
 }
 #group4 .parallax__layer--deep {
-  background: $white;
+  background: $primary;
 }
 
 #group5 {
