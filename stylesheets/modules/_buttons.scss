@@ -1,0 +1,25 @@
+@import '_vars';
+
+a.button {
+	padding: $button-padd-v $button-padd-h;
+	color: $white;
+	@include border-radius(5px);
+	text-decoration: none;
+	display: inline-block;
+
+	&.primary {
+		background-color: $primary;
+
+		&:hover {
+			background-color: $primary-darker;
+		}
+	}
+
+	&.secondary {
+		background-color: $secondary;
+
+		&:hover {
+			background-color: $secondary-darker;
+		}
+	}
+}

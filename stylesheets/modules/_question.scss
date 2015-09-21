@@ -1,0 +1,14 @@
+@import '_vars';
+
+.question {
+	height: 100px;
+	h5 {
+		font-size: $h5-size;
+		font-weight: $font-regular;
+	}
+
+	p {
+		padding-left: 6%;
+		line-height: 1.5em;
+	}
+}
