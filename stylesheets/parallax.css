@@ -76,32 +76,41 @@ body {
 
 #group2 .parallax__layer--back {
   background: #ffffff;
-  height: 100px; }
+  height: 250px;
+  z-index: 2; }
 
 #group3 {
-  z-index: 4;
-  /* slide over group 2 and 4 */ }
+  z-index: 3; }
 
 #group3 .parallax__layer--fore {
   background: url("../images/text-layer-1.png");
   background-size: contain;
   width: 100%;
-  background-repeat: no-repeat; }
+  min-height: 550px;
+  background-repeat: no-repeat;
+  z-index: 3;
+  top: -150px; }
 
 #group3 .parallax__layer--base {
   background: url("../images/banner-blur.jpg");
-  background-size: cover;
-  height: 550px; }
+  background-size: contain;
+  width: 100%;
+  min-height: 550px;
+  background-repeat: no-repeat;
+  z-index: 1;
+  /*background-color: $white;*/ }
 
 #group4 {
-  z-index: 2;
+  z-index: 3;
   /* slide under group 3 and 5 */ }
 
 #group4 .parallax__layer--back {
+  z-index: 2;
   background: url("../images/project-1.jpg");
   background-size: cover; }
 
 #group4 .parallax__layer--deep {
+  z-index: 2;
   background: #e86427; }
 
 #group5 {
@@ -112,7 +121,8 @@ body {
 #group5 .parallax__layer--base {
   /*background-size: 250px;*/
   background: url("../images/project-1.jpg");
-  background-size: cover; }
+  background-size: cover;
+  /*z-index: 2;*/ }
 
 #group6 {
   z-index: 2;
