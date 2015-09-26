@@ -37,8 +37,10 @@ img {
 	}
 
 	&.project {
-		// height: 300px;
 		@include dynamic-sizing();
+	}
 
+	&.full-width {
+		@include border-radius(0);
 	}
 }

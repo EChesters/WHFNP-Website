@@ -1,17 +1,22 @@
 @import '_vars';
 
-a.button {
+a.button, input[type="submit"].button {
 	padding: $button-padd-v $button-padd-h;
 	color: $white;
 	@include border-radius(5px);
 	text-decoration: none;
 	display: inline-block;
+	border: none;
+	font-family: $primary-font;
+	font-size: $p-quote-size;
 
 	&.primary {
 		background-color: $primary;
 
 		&:hover {
 			background-color: $primary-darker;
+			cursor: pointer;
+			text-decoration: underline;
 		}
 	}
 
@@ -20,6 +25,8 @@ a.button {
 
 		&:hover {
 			background-color: $secondary-darker;
+			cursor: pointer;
+			text-decoration: underline;
 		}
 	}
 }

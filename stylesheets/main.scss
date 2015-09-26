@@ -1,5 +1,5 @@
 @import '_vars';
-@import '_mixins';
+@import 'partials/_mixins';
 @import '_components';
 
 body {
@@ -66,7 +66,8 @@ body {
 }
 
 .extra-padding-horizontal-sides {
-	padding: 0 50px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .extra-margin-top {
@@ -77,8 +78,8 @@ body {
 	margin-bottom: 25px;
 }
 
-.margin-left {
-	margin-left: 50px;
+.padding-left {
+	padding-left: 50px;
 }
 
 .margin-right {
@@ -105,7 +106,7 @@ body {
 	text-align: center;
 	width: 100%;
 
-	.text-left {
+	&.text-left {
 		text-align: left;
 	}
 }

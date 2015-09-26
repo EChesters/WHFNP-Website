@@ -4,8 +4,11 @@
 /* FONTS --------------------------------*/
 /* IMPORTS ------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
-/* COLOURS ------------------------------*/
-/* FONTS --------------------------------*/
+/* COLOURS ------------------------------ */
+/* FONTS -------------------------------- */
+/* SPACING ------------------------------ */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
@@ -77,7 +80,8 @@ body {
   padding-bottom: 25px !important; }
 
 .extra-padding-horizontal-sides {
-  padding: 0 50px; }
+  padding-left: 50px;
+  padding-right: 50px; }
 
 .extra-margin-top {
   margin-top: 25px; }
@@ -85,8 +89,8 @@ body {
 .extra-margin-bottom {
   margin-bottom: 25px; }
 
-.margin-left {
-  margin-left: 50px; }
+.padding-left {
+  padding-left: 50px; }
 
 .margin-right {
   margin-right: 50px; }
@@ -111,7 +115,7 @@ body {
   margin: 0 auto;
   text-align: center;
   width: 100%; }
-  .central .text-left {
+  .central.text-left {
     text-align: left; }
 
 .box-bg {
@@ -174,6 +178,10 @@ body {
   .grid .extra-padding {
     padding: 25px 100px 25px 50px; }
 
+.zebra {
+  border-top: solid 1px #eeeeee;
+  border-bottom: solid 1px #eeeeee; }
+
 /* IMPORTS ------------------------------*/
 /* COLOURS ------------------------------ */
 /* FONTS -------------------------------- */
@@ -182,7 +190,8 @@ body {
   font-family: "Lato", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 100; }
+  font-weight: 100;
+  padding-bottom: 15px; }
 
 h2 {
   font-size: 3em; }
@@ -193,7 +202,7 @@ h3 {
 h4 {
   font-size: 2em; }
   h4.quote {
-    font-family: 400;
+    font-family: "Playfair Display", serif;
     font-style: italic; }
 
 h5 {
@@ -232,7 +241,7 @@ span.bold {
 /* IMPORTS ------------------------------*/
 /* COLOURS ------------------------------*/
 /* FONTS --------------------------------*/
-a.button {
+a.button, input[type="submit"].button {
   padding: 15px 25px;
   color: #ffffff;
   -webkit-border-radius: 5px;
@@ -240,15 +249,22 @@ a.button {
   -ms-border-radius: 5px;
   border-radius: 5px;
   text-decoration: none;
-  display: inline-block; }
-  a.button.primary {
+  display: inline-block;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1em; }
+  a.button.primary, input[type="submit"].button.primary {
     background-color: #e86427; }
-    a.button.primary:hover {
-      background-color: #e86427; }
-  a.button.secondary {
+    a.button.primary:hover, input[type="submit"].button.primary:hover {
+      background-color: #e86427;
+      cursor: pointer;
+      text-decoration: underline; }
+  a.button.secondary, input[type="submit"].button.secondary {
     background-color: #0086cd; }
-    a.button.secondary:hover {
-      background-color: #0086cd; }
+    a.button.secondary:hover, input[type="submit"].button.secondary:hover {
+      background-color: #0072AF;
+      cursor: pointer;
+      text-decoration: underline; }
 
 /* IMPORTS ------------------------------*/
 /* COLOURS ------------------------------ */
@@ -338,5 +354,36 @@ img {
     background-size: cover;
     height: auto;
     width: auto; }
+  img.full-width {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+
+/* IMPORTS ------------------------------*/
+/* COLOURS ------------------------------ */
+/* FONTS -------------------------------- */
+/* SPACING ------------------------------ */
+/* IMPORTS ------------------------------*/
+/* COLOURS ------------------------------ */
+/* FONTS -------------------------------- */
+/* SPACING ------------------------------ */
+#sign-up {
+  width: 60%; }
+  #sign-up label, #sign-up input {
+    display: block;
+    margin: 10px 0;
+    float: none; }
+  #sign-up input[type=text], #sign-up textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #eeeeee;
+    font-size: 13px; }
+  #sign-up input[type=submit] {
+    float: right; }
 
 /*# sourceMappingURL=base.css.map */
