@@ -1,0 +1,60 @@
+@import '_vars';
+
+body {
+	font-family: $primary-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-regular;
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-size: $h2-size;
+}
+
+h3 {
+  font-size: $h3-size;
+}
+
+h4 {
+  font-size: $h4-size;
+
+  &.quote {
+    font-family: $quote-font;
+    font-style: italic;
+  }
+}
+
+h5 {
+  font-size: $h5-size;
+}
+
+p {
+  &.block-p {
+    line-height: 2em;
+    padding-bottom: $padd-bottom;
+    font-weight: $font-light;
+  }
+
+  &.mini-title {
+    font-weight: $font-regular;
+  }
+
+  &.quote {
+    font-family: $quote-font;
+    font-size: $p-quote-size;
+    font-style: italic;
+    margin: 10px 0;
+  }
+}
+
+.text-centre {
+  text-align: center;
+}
+
+span {
+  &.bold {
+    font-weight: $font-regular;
+  }
+}

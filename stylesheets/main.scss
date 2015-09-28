@@ -1,5 +1,5 @@
 @import '_vars';
-@import '_mixins';
+@import 'partials/_mixins';
 @import '_components';
 
 body {
@@ -9,46 +9,6 @@ body {
 
 * {
 	box-sizing: border-box;
-}
-
-nav {
-	border-bottom: $primary solid 3px;
-	overflow: auto;
-	padding: 5px 0;
-	@include drop-shadow($border-gray);
-	background-color: $white;
-
-	.nav-logo {
-		display: inline-block;
-		float: left;
-		height: 40px;
-		margin-left: 2%;
-	}
-
-	ul {
-		display: inline-block;
-		float: right;
-		margin-right: 2%;
-
-		li {
-			display: inline-block;
-			@include vertical-align(-50%);
-
-			a {
-				color: $black;
-				padding: 30px;
-
-				&:hover {
-					background-color: $primary;
-					color: $white;
-				}
-
-				&:visited {
-					color: $black;
-				}
-			}
-		}
-	}
 }
 
 #content {
@@ -93,58 +53,14 @@ nav {
 	}
 }
 
-.grid {
-	display: block;
-	width: 100%;
-	overflow: auto;
-
-	@for $i from 1 through 12 {
-		.col-1-#{$i} {
-			width: percentage($i / 12);
-		}
+#volunteers {
+	p.block-p {
+		padding-bottom: 0;
 	}
 
-	.col-71 {
-		width: 71%;
-	}
-
-	.cell {
-		display: inline-block;
-		padding: 5px;
-		min-height: 30px;
-		vertical-align: middle;
-		overflow: visible;
-		// border: 1px solid black;
-	}
-
-	.right {
-		float: right;
-	}
-
-	.left {
-		float: left;
-	}
-
-	.center {
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.extra-padding {
-		padding: 25px 100px 25px 50px;
-	}
-}
-
-.question {
-	height: 100px;
-	h5 {
-		font-size: $h5-question-size;
-		font-weight: $font-regular;
-	}
-
-	p {
-		padding-left: 6%;
-		line-height: 1.5em;
+	p.quote{
+		font-size: 1.1em;
+		line-height: $xline-h;
 	}
 }
 
@@ -154,7 +70,8 @@ nav {
 }
 
 .extra-padding-horizontal-sides {
-	padding: 0 50px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .extra-margin-top {
@@ -165,8 +82,8 @@ nav {
 	margin-bottom: 25px;
 }
 
-.margin-left {
-	margin-left: 50px;
+.padding-left {
+	padding-left: 50px;
 }
 
 .margin-right {
@@ -250,52 +167,20 @@ h5 {
 
 .text-centre {
 	text-align: center;
+}
+
+/* SECTIONS ------------------------------------- */
+.central {
 	margin: 0 auto;
-}
+	text-align: center;
+	width: 100%;
 
-.text-right {
-	text-align: right;
-}
-
-/* BUTTONS --------------------------------------- */
-a.button {
-	padding: 15px 25px;
-	color: $white;
-	@include border-radius(5px);
-	text-decoration: none;
-	display: inline-block;
-
-	&.primary {
-		background-color: $primary;
-	}
-
-	&.secondary {
-		background-color: $secondary;
+	&.text-left {
+		text-align: left;
 	}
 }
 
-/* IMAGES --------------------------------------- */
-.img-container {
-	@include border-radius(5px);
-	height: 120px;
-	width: auto;
-	overflow: hidden;
-
-	img {
-		@include vertical-align(50%);
-		@include dynamic-sizing();
-	}
-
-	&.medium {
-		height: 300px;
-	}
-
-	&.volunteer {
-		width: 96px;
-	}
-}
-
-img {
+.box-bg {
 	@include border-radius(5px);
 	&.half-grid {
 		width: 50%;
@@ -316,31 +201,5 @@ img {
 	&.project {
 		// height: 300px;
 		@include dynamic-sizing();
-
 	}
-}
-
-/* SECTIONS ------------------------------------- */
-.central {
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
-
-	.text-left {
-		text-align: left;
-	}
-}
-
-.box-bg {
-	@include border-radius(5px);
-	background-color: $white;
-	border: 1px solid $black;
-	margin-top: 10%;
-/*
-	@media only screen and (max-device-width: 1024px) 
-  					   and (-webkit-min-device-pixel-ratio: 1) {
-  		width: 100%;
-
-}*/
-
 }

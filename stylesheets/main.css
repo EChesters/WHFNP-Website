@@ -3,9 +3,10 @@
 /* COLOURS ------------------------------*/
 /* FONTS --------------------------------*/
 /* IMPORTS ------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
-/* COLOURS ------------------------------*/
-/* FONTS --------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
+/* COLOURS ------------------------------ */
+/* FONTS -------------------------------- */
+/* SPACING ------------------------------ */
 .divider {
   border: 0;
   height: 1px;
@@ -22,39 +23,6 @@ body {
 
 * {
   box-sizing: border-box; }
-
-nav {
-  border-bottom: #e86427 solid 3px;
-  overflow: auto;
-  padding: 5px 0;
-  -webkit-box-shadow: 0 8px 6px -6px #dadada;
-  -moz-box-shadow: 0 8px 6px -6px #dadada;
-  box-shadow: 0 8px 6px -6px #dadada;
-  background-color: #ffffff; }
-  nav .nav-logo {
-    display: inline-block;
-    float: left;
-    height: 40px;
-    margin-left: 2%; }
-  nav ul {
-    display: inline-block;
-    float: right;
-    margin-right: 2%; }
-    nav ul li {
-      display: inline-block;
-      position: relative;
-      top: -50%;
-      -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      transform: translateY(50%); }
-      nav ul li a {
-        color: #111111;
-        padding: 30px; }
-        nav ul li a:hover {
-          background-color: #e86427;
-          color: #ffffff; }
-        nav ul li a:visited {
-          color: #111111; }
 
 #content {
   background-color: #ffffff;
@@ -97,67 +65,19 @@ nav {
       margin-top: 17%;
       font-size: 3em; }
 
-.grid {
-  display: block;
-  width: 100%;
-  overflow: auto; }
-  .grid .col-1-1 {
-    width: 8.33333%; }
-  .grid .col-1-2 {
-    width: 16.66667%; }
-  .grid .col-1-3 {
-    width: 25%; }
-  .grid .col-1-4 {
-    width: 33.33333%; }
-  .grid .col-1-5 {
-    width: 41.66667%; }
-  .grid .col-1-6 {
-    width: 50%; }
-  .grid .col-1-7 {
-    width: 58.33333%; }
-  .grid .col-1-8 {
-    width: 66.66667%; }
-  .grid .col-1-9 {
-    width: 75%; }
-  .grid .col-1-10 {
-    width: 83.33333%; }
-  .grid .col-1-11 {
-    width: 91.66667%; }
-  .grid .col-1-12 {
-    width: 100%; }
-  .grid .col-71 {
-    width: 71%; }
-  .grid .cell {
-    display: inline-block;
-    padding: 5px;
-    min-height: 30px;
-    vertical-align: middle;
-    overflow: visible; }
-  .grid .right {
-    float: right; }
-  .grid .left {
-    float: left; }
-  .grid .center {
-    width: 100%;
-    margin: 0 auto; }
-  .grid .extra-padding {
-    padding: 25px 100px 25px 50px; }
-
-.question {
-  height: 100px; }
-  .question h5 {
-    font-size: 1.5em;
-    font-weight: 400; }
-  .question p {
-    padding-left: 6%;
-    line-height: 1.5em; }
+#volunteers p.block-p {
+  padding-bottom: 0; }
+#volunteers p.quote {
+  font-size: 1.1em;
+  line-height: 1.3em; }
 
 .extra-padding-vertical-sides {
   padding-top: 25px !important;
   padding-bottom: 25px !important; }
 
 .extra-padding-horizontal-sides {
-  padding: 0 50px; }
+  padding-left: 50px;
+  padding-right: 50px; }
 
 .extra-margin-top {
   margin-top: 25px; }
@@ -165,8 +85,8 @@ nav {
 .extra-margin-bottom {
   margin-bottom: 25px; }
 
-.margin-left {
-  margin-left: 50px; }
+.padding-left {
+  padding-left: 50px; }
 
 .margin-right {
   margin-right: 50px; }
@@ -204,12 +124,12 @@ span.bold {
 
 /* TEXT ------------------------------------------ */
 h2 {
-  font-weight: 100;
+  font-weight: 200;
   font-size: 3em; }
 
 h3 {
-  font-weight: 100;
-  font-size: 2.6em; }
+  font-weight: 200;
+  font-size: 2.5em; }
 
 h4 {
   font-size: 2em;
@@ -220,7 +140,7 @@ h4 {
 
 h5 {
   font-weight: 400;
-  font-size: 1.3em; }
+  font-size: 1.5em; }
 
 .social-media-link {
   color: #111111;
@@ -231,62 +151,26 @@ h5 {
     padding-right: 5px; }
 
 .text-centre {
+  text-align: center; }
+
+/* SECTIONS ------------------------------------- */
+.central {
+  margin: 0 auto;
   text-align: center;
-  margin: 0 auto; }
+  width: 100%; }
+  .central.text-left {
+    text-align: left; }
 
-.text-right {
-  text-align: right; }
-
-/* BUTTONS --------------------------------------- */
-a.button {
-  padding: 15px 25px;
-  color: #ffffff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block; }
-  a.button.primary {
-    background-color: #e86427; }
-  a.button.secondary {
-    background-color: #0086cd; }
-
-/* IMAGES --------------------------------------- */
-.img-container {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  height: 120px;
-  width: auto;
-  overflow: hidden; }
-  .img-container img {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    max-width: 180%;
-    max-height: 120%;
-    background-size: cover;
-    height: auto;
-    width: auto; }
-  .img-container.medium {
-    height: 300px; }
-  .img-container.volunteer {
-    width: 96px; }
-
-img {
+.box-bg {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px; }
-  img.half-grid {
+  .box-bg.half-grid {
     width: 50%; }
-  img.volunteer {
+  .box-bg.volunteer {
     height: 200px; }
-  img.partner {
+  .box-bg.partner {
     width: 200px;
     text-align: center;
     max-height: 150px;
@@ -295,34 +179,11 @@ img {
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     border-radius: 0px; }
-  img.project {
+  .box-bg.project {
     max-width: 180%;
     max-height: 120%;
     background-size: cover;
     height: auto;
     width: auto; }
-
-/* SECTIONS ------------------------------------- */
-.central {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%; }
-  .central .text-left {
-    text-align: left; }
-
-.box-bg {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  border: 1px solid #111111;
-  margin-top: 10%;
-  /*
-  	@media only screen and (max-device-width: 1024px) 
-    					   and (-webkit-min-device-pixel-ratio: 1) {
-    		width: 100%;
-  
-  }*/ }
 
 /*# sourceMappingURL=main.css.map */
