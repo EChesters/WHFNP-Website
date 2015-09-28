@@ -1,14 +1,30 @@
 @import '_vars';
 
+#question-nav {
+	border: 1px solid $light-gray;
+	padding: 20px;
+	margin-top: 5px;
+	@include border-radius(5px);
+
+	a {
+		text-decoration: none;
+		color: $black;
+		display: block;
+		line-height: $list-line-h;
+	}
+}
+
 .question {
-	height: 100px;
+	height: 300px;
+	border-top: 3px solid $primary;
+	padding: 2% 5% !important;
+
 	h5 {
 		font-size: $h5-size;
 		font-weight: $font-regular;
 	}
 
 	p {
-		padding-left: 6%;
 		line-height: 1.5em;
 	}
 }

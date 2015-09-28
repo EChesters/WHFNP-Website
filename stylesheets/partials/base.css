@@ -3,16 +3,16 @@
 /* COLOURS ------------------------------*/
 /* FONTS --------------------------------*/
 /* IMPORTS ------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
 /* COLOURS ------------------------------ */
 /* FONTS -------------------------------- */
 /* SPACING ------------------------------ */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
 .divider {
   border: 0;
   height: 1px;
@@ -229,13 +229,28 @@ span.bold {
 /* IMPORTS ------------------------------*/
 /* COLOURS ------------------------------*/
 /* FONTS --------------------------------*/
+#question-nav {
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  margin-top: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  #question-nav a {
+    text-decoration: none;
+    color: #111111;
+    display: block;
+    line-height: 2em; }
+
 .question {
-  height: 100px; }
+  height: 300px;
+  border-top: 3px solid #e86427;
+  padding: 2% 5% !important; }
   .question h5 {
     font-size: 1.3em;
     font-weight: 400; }
   .question p {
-    padding-left: 6%;
     line-height: 1.5em; }
 
 /* IMPORTS ------------------------------*/
@@ -256,7 +271,7 @@ a.button, input[type="submit"].button {
   a.button.primary, input[type="submit"].button.primary {
     background-color: #e86427; }
     a.button.primary:hover, input[type="submit"].button.primary:hover {
-      background-color: #e86427;
+      background-color: #D25A23;
       cursor: pointer;
       text-decoration: underline; }
   a.button.secondary, input[type="submit"].button.secondary {
