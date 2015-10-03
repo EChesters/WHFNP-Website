@@ -1,7 +1,8 @@
 /* IMPORTS ------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
-/* COLOURS ------------------------------*/
-/* FONTS --------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
+/* COLOURS ------------------------------ */
+/* FONTS -------------------------------- */
+/* SPACING ------------------------------ */
 /* IMPORTS ------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
 /* COLOURS ------------------------------ */
@@ -121,26 +122,6 @@ p.quote {
 
 span.bold {
   font-weight: 400; }
-
-/* TEXT ------------------------------------------ */
-h2 {
-  font-weight: 200;
-  font-size: 3em; }
-
-h3 {
-  font-weight: 200;
-  font-size: 2.5em; }
-
-h4 {
-  font-size: 2em;
-  font-weight: 100; }
-  h4.quote {
-    font-family: "Playfair Display", serif;
-    font-style: italic; }
-
-h5 {
-  font-weight: 400;
-  font-size: 1.5em; }
 
 .social-media-link {
   color: #111111;

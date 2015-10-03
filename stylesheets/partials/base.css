@@ -1,15 +1,16 @@
 /* IMPORTS ------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
-/* COLOURS ------------------------------*/
-/* FONTS --------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
+/* COLOURS ------------------------------ */
+/* FONTS -------------------------------- */
+/* SPACING ------------------------------ */
 /* IMPORTS ------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
 /* COLOURS ------------------------------ */
 /* FONTS -------------------------------- */
 /* SPACING ------------------------------ */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,900|Playfair+Display:400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
@@ -128,26 +129,6 @@ p.quote {
 span.bold {
   font-weight: 400; }
 
-/* TEXT ------------------------------------------ */
-h2 {
-  font-weight: 200;
-  font-size: 3em; }
-
-h3 {
-  font-weight: 200;
-  font-size: 2.5em; }
-
-h4 {
-  font-size: 2em;
-  font-weight: 100; }
-  h4.quote {
-    font-family: "Playfair Display", serif;
-    font-style: italic; }
-
-h5 {
-  font-weight: 400;
-  font-size: 1.5em; }
-
 .social-media-link {
   color: #111111;
   text-decoration: none; }
@@ -252,6 +233,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   padding-bottom: 15px; }
 
+h1 {
+  font-size: 3.5em;
+  font-weight: 900; }
+
 h2 {
   font-size: 3em; }
 
@@ -261,7 +246,6 @@ h3 {
 h4 {
   font-size: 2em; }
   h4.quote {
-    font-family: "Playfair Display", serif;
     font-style: italic; }
 
 h5 {
@@ -286,8 +270,9 @@ span.bold {
   font-weight: 400; }
 
 /* IMPORTS ------------------------------*/
-/* COLOURS ------------------------------*/
-/* FONTS --------------------------------*/
+/* COLOURS ------------------------------ */
+/* FONTS -------------------------------- */
+/* SPACING ------------------------------ */
 #question-nav {
   border: 1px solid #eeeeee;
   padding: 20px;
@@ -304,17 +289,18 @@ span.bold {
 
 .question {
   height: 300px;
-  border-top: 3px solid #e86427;
+  border-top: 3px solid #da2425;
   padding: 2% 5% !important; }
   .question h5 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 400; }
   .question p {
     line-height: 1.5em; }
 
 /* IMPORTS ------------------------------*/
-/* COLOURS ------------------------------*/
-/* FONTS --------------------------------*/
+/* COLOURS ------------------------------ */
+/* FONTS -------------------------------- */
+/* SPACING ------------------------------ */
 a.button, input[type="submit"].button {
   padding: 15px 25px;
   color: #ffffff;
@@ -328,9 +314,9 @@ a.button, input[type="submit"].button {
   font-family: "Lato", sans-serif;
   font-size: 1em; }
   a.button.primary, input[type="submit"].button.primary {
-    background-color: #e86427; }
+    background-color: #da2425; }
     a.button.primary:hover, input[type="submit"].button.primary:hover {
-      background-color: #D25A23;
+      background-color: #B91E1E;
       cursor: pointer;
       text-decoration: underline; }
   a.button.secondary, input[type="submit"].button.secondary {
@@ -339,18 +325,32 @@ a.button, input[type="submit"].button {
       background-color: #0072AF;
       cursor: pointer;
       text-decoration: underline; }
+  a.button.transparent, input[type="submit"].button.transparent {
+    border: 2px solid #ffffff;
+    background-color: rgba(213, 212, 223, 0.1);
+    padding: 20px 40px; }
+    a.button.transparent.primary:hover, input[type="submit"].button.transparent.primary:hover {
+      border: 2px solid #B91E1E;
+      background-color: #da2425;
+      cursor: pointer;
+      text-decoration: underline; }
+    a.button.transparent.secondary:hover, input[type="submit"].button.transparent.secondary:hover {
+      border: 2px solid #0072AF;
+      background-color: #0086cd;
+      cursor: pointer;
+      text-decoration: underline; }
 
 /* IMPORTS ------------------------------*/
 /* COLOURS ------------------------------ */
 /* FONTS -------------------------------- */
 /* SPACING ------------------------------ */
 nav {
-  border-bottom: #e86427 solid 3px;
+  border-bottom: #da2425 solid 3px;
   overflow: auto;
   padding: 5px 0;
-  -webkit-box-shadow: 0 8px 6px -6px #dadada;
-  -moz-box-shadow: 0 8px 6px -6px #dadada;
-  box-shadow: 0 8px 6px -6px #dadada; }
+  background-color: #ffffff; }
+  nav.home-nav {
+    border-bottom: none !important; }
   nav .nav-logo {
     display: inline-block;
     float: left;
@@ -375,7 +375,7 @@ nav {
           nav ul li a {
             padding: 10px; } }
         nav ul li a:hover {
-          background-color: #e86427;
+          background-color: #da2425;
           color: #ffffff; }
         nav ul li a:visited {
           color: #111111; }
@@ -459,5 +459,51 @@ img {
     font-size: 13px; }
   #sign-up input[type=submit] {
     float: right; }
+
+#banner-title {
+  padding: 1%;
+  background-color: #ffffff;
+  border-bottom: #da2425 solid 3px; }
+  #banner-title h5 {
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 300; }
+
+.banner {
+  top: 0;
+  left: 0; }
+
+.banner-half {
+  color: #ffffff;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1; }
+  .banner-half.cell {
+    padding: 0 !important; }
+  .banner-half#volunteer {
+    left: 0;
+    border-right: 1px solid #111111;
+    background-image: url("../../images/home-page/v-blur-grey.jpg");
+    background-size: cover; }
+    .banner-half#volunteer:hover {
+      background: url("../../images/home-page/v-blur-red.jpg");
+      background-size: cover; }
+  .banner-half#nonprofits {
+    background: url("../../images/home-page/np-blur-grey.jpg");
+    background-size: cover;
+    right: 0;
+    border-left: 1px solid #111111; }
+    .banner-half#nonprofits:hover {
+      background: url("../../images/home-page/np-blur-blue.jpg");
+      background-size: cover; }
+
+.v-middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 100; }
 
 /*# sourceMappingURL=base.css.map */

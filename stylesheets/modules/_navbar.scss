@@ -4,7 +4,12 @@ nav {
 	border-bottom: $primary solid 3px;
 	overflow: auto;
 	padding: 5px 0;
-	@include drop-shadow($border-gray);
+	// @include drop-shadow($black);
+	background-color: $white;
+
+	&.home-nav {
+		border-bottom: none !important;
+	}
 
 	.nav-logo {
 		display: inline-block;

@@ -3,14 +3,14 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,200,300,900|Playfair+Display:400italic);
 
 /* COLOURS ------------------------------ */
-
 $white:					#ffffff;
 $light-gray:			#eeeeee;
 $black:					#111111;
 $border-gray:			#dadada;
 
-$primary:				#e86427;
-$primary-darker:		#D25A23;
+$primary:				#da2425;
+$primary-darker:		#B91E1E;
+$primary-darker-trans:	rgba(185, 30, 30, 1);
 $secondary:				#0086cd;
 $secondary-darker:		#0072AF;
 
@@ -21,6 +21,7 @@ $font-xlight:			200;
 $font-light:			300;
 $font-regular:			400;
 $font-bold:				900;
+$h1-size:				3.5em;
 $h2-size:				3em;
 $h3-size:				2.5em;
 $h4-size:				2em;

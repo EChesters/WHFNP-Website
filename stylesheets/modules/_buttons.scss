@@ -1,4 +1,4 @@
-@import '_vars';
+@import '../partials/_vars';
 
 a.button, input[type="submit"].button {
 	padding: $button-padd-v $button-padd-h;
@@ -25,6 +25,28 @@ a.button, input[type="submit"].button {
 
 		&:hover {
 			background-color: $secondary-darker;
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	}
+
+		&.transparent {
+		border: 2px solid $white;
+		background-color: rgba(213, 212, 223, 0.1);
+		padding: 20px 40px;
+
+		&.primary {
+		&:hover {
+			border: 2px solid $primary-darker;
+			background-color: $primary;
+			cursor: pointer;
+			text-decoration: underline;
+		}
+		}
+
+		&.secondary:hover {
+			border: 2px solid $secondary-darker;
+			background-color: $secondary;
 			cursor: pointer;
 			text-decoration: underline;
 		}
