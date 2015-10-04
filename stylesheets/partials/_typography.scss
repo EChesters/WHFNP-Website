@@ -26,7 +26,6 @@ h4 {
   font-size: $h4-size;
 
   &.quote {
-    // font-family: $quote-font;
     font-style: italic;
   }
 }
@@ -47,7 +46,7 @@ p {
   }
 
   &.quote {
-    font-family: $quote-font;
+    font-weight: $font-xlight;
     font-size: $p-quote-size;
     font-style: italic;
     margin: 10px 0;

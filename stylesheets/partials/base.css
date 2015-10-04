@@ -113,19 +113,6 @@ body {
   -ms-transform: translateY(50%);
   transform: translateY(50%); }
 
-p.block-p {
-  line-height: 2em;
-  padding-bottom: 20px;
-  font-weight: 300;
-  word-wrap: keep-all; }
-p.mini-title {
-  font-weight: 400; }
-p.quote {
-  font-family: "Playfair Display", serif;
-  font-size: 1em;
-  font-style: italic;
-  margin: 10px 0; }
-
 span.bold {
   font-weight: 400; }
 
@@ -208,6 +195,9 @@ span.bold {
     min-height: 30px;
     vertical-align: middle;
     overflow: visible; }
+    .grid .cell.zebra {
+      border-top: solid 1px #eeeeee;
+      border-bottom: solid 1px #eeeeee; }
   .grid .right {
     float: right; }
   .grid .left {
@@ -217,10 +207,6 @@ span.bold {
     margin: 0 auto; }
   .grid .extra-padding {
     padding: 25px 100px 25px 50px; }
-
-.zebra {
-  border-top: solid 1px #eeeeee;
-  border-bottom: solid 1px #eeeeee; }
 
 /* IMPORTS ------------------------------*/
 /* COLOURS ------------------------------ */
@@ -258,7 +244,7 @@ p.block-p {
 p.mini-title {
   font-weight: 400; }
 p.quote {
-  font-family: "Playfair Display", serif;
+  font-weight: 200;
   font-size: 1em;
   font-style: italic;
   margin: 10px 0; }
@@ -505,5 +491,30 @@ img {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 100; }
+
+.founder {
+  display: block;
+  max-height: 350px;
+  color: #ffffff;
+  text-align: center; }
+  .founder.cell {
+    padding: 0 !important;
+    height: 350px; }
+  .founder.nandhini {
+    background: url("../../images/volunteers/nandhini.jpg");
+    background-size: cover; }
+  .founder.vinita {
+    background: url("../../images/volunteers/vinita.jpg");
+    background-size: cover; }
+  .founder img {
+    width: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    position: relative; }
+  .founder .founder-text {
+    position: absolute;
+    width: 100%; }
 
 /*# sourceMappingURL=base.css.map */

@@ -107,19 +107,6 @@ body {
   -ms-transform: translateY(50%);
   transform: translateY(50%); }
 
-p.block-p {
-  line-height: 2em;
-  padding-bottom: 20px;
-  font-weight: 300;
-  word-wrap: keep-all; }
-p.mini-title {
-  font-weight: 400; }
-p.quote {
-  font-family: "Playfair Display", serif;
-  font-size: 1em;
-  font-style: italic;
-  margin: 10px 0; }
-
 span.bold {
   font-weight: 400; }
 

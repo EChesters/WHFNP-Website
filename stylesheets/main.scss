@@ -104,26 +104,6 @@ body {
 	@include vertical-align(-50%);
 }
 
-p {
-	&.block-p {
-		line-height: 2em;
-		padding-bottom: 20px;
-		font-weight: $font-light;
-		word-wrap: keep-all;
-	}
-
-	&.mini-title {
-		font-weight: $font-regular;
-	}
-
-	&.quote {
-		font-family: $quote-font;
-		font-size: $p-quote-size;
-		font-style: italic;
-		margin: 10px 0;
-	}
-}
-
 span {
 	&.bold {
 		font-weight: $font-regular;

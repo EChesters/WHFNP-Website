@@ -19,6 +19,11 @@
 		vertical-align: middle;
 		overflow: visible;
 		// border: 1px solid black;
+
+		&.zebra {
+			border-top: solid 1px $light-gray;
+			border-bottom: solid 1px $light-gray;
+		}
 	}
 
 	.right {
@@ -37,9 +42,4 @@
 	.extra-padding {
 		padding: 25px 100px 25px 50px;
 	}
-}
-
-.zebra {
-	border-top: solid 1px $light-gray;
-	border-bottom: solid 1px $light-gray;
 }

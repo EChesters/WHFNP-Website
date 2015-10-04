@@ -1,0 +1,39 @@
+.founder {
+	// width: 50%;
+	display: block;
+	max-height: 350px;
+	color: $white;
+	text-align: center;
+	
+
+	&.cell {
+		padding: 0 !important; 
+		height: 350px;
+	}
+
+	&.nandhini {
+		background: url('../../images/volunteers/nandhini.jpg');
+		background-size: cover;
+	}
+
+	&.vinita {
+		background: url('../../images/volunteers/vinita.jpg');
+		background-size: cover;
+	}
+
+	img {
+		width: 100%;
+		@include border-radius(0);
+		position: relative;
+		&:hover {
+
+		}
+	}
+
+	.founder-text {
+		position: absolute; 
+		// top: 200px; 
+		// left: 0; 
+		width: 100%; 
+	}
+}
