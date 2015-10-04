@@ -1,57 +1,30 @@
-#banner-title {
-	padding: 1%;
-	background-color: $white;
-	border-bottom: $primary solid 3px;
+#banner {
+	height: 400px;
+	overflow: hidden;
+	width: 100%;
+	background-image: url('../../images/banner-blur.jpg');
+	background-size: cover;
 
-	h5 {
-		width: 50%;
+	// img {
+	// 	@include dynamic-sizing();
+	// 	width: 100%;
+	// 	position: absolute;
+	// 	@include border-radius(0px);
+	// }
+
+	h2 {
+		@include vertical-align(50%);
+		color: $white;
+		// position: relative;
+		font-weight: $font-bold;
+		font-size: $h2-size;
+		// width: 76%;
+		display: block;
+		// line-height: 1.5em;
+		text-align: center;
+		// left: 50%;
+		// margin-left: -38%;
 		margin: 0 auto;
-		font-weight: $font-light;
+		text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.7);
 	}
-}
-
-.banner {
-	top: 0;
-	left: 0;
-}
-
-.banner-half {
-	color: $white;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	z-index: -1;
-
-	&.cell {
-		padding: 0 !important;
-	}
-
-	&#volunteer {
-		left: 0;
-		border-right: 1px solid $black;
-		background-image: url('../../images/home-page/v-blur-grey.jpg');
-		background-size: cover;
-
-		&:hover {
-			background: url('../../images/home-page/v-blur-red.jpg');
-			background-size: cover;
-		}
-	}
-
-	&#nonprofits {
-		background: url('../../images/home-page/np-blur-grey.jpg');
-		background-size: cover;
-		right: 0;
-		border-left: 1px solid $black;
-
-		&:hover {
-			background: url('../../images/home-page/np-blur-blue.jpg');
-			background-size: cover;
-		}
-	}
-}
-
-.v-middle {
-	@include vertical-align(50%);
-	z-index: 100;
 }
