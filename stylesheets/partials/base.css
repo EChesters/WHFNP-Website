@@ -223,6 +223,9 @@ p.quote {
 span.bold {
   font-weight: 400; }
 
+.txt-shadow {
+  text-shadow: 0px 0px 24px #111111; }
+
 .social-icon {
   text-align: center;
   color: #da2425;
@@ -515,5 +518,38 @@ img {
   .founder .founder-text {
     position: absolute;
     width: 100%; }
+
+#people {
+  overflow: hidden;
+  clear: both; }
+  #people .cell {
+    padding: 0;
+    display: block;
+    float: left;
+    overflow: hidden;
+    height: 250px; }
+  #people .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+  #people .person img {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+  #people .person .text {
+    position: relative;
+    color: #ffffff;
+    position: relative;
+    top: -130%;
+    -webkit-transform: translateY(130%);
+    -ms-transform: translateY(130%);
+    transform: translateY(130%);
+    text-align: center; }
+    #people .person .text h5 {
+      padding-bottom: 0; }
 
 /*# sourceMappingURL=base.css.map */
