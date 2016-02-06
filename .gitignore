@@ -1,6 +1,3 @@
-.DS_Store
-/.sass-cache
-*.css.map
-stylesheets/.sass-cache/
-.scssc
-NOTES.txt
+_site
+.sass-cache
+.jekyll-metadata
