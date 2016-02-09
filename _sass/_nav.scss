@@ -1,0 +1,13 @@
+nav {
+	.site-title {
+		width: 150px;
+	}
+
+	li a {
+		padding: 15px 30px;
+
+		&:hover {
+			color: $brand-color !important;
+		}
+	}
+}

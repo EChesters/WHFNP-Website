@@ -240,3 +240,15 @@
         }
     }
 }
+
+/**
+ * POSITIONS
+ */
+ .position {
+    display: block;
+    float: none;
+
+    &.central {
+        margin: 0 auto;
+    }
+ }
