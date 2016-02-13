@@ -1,0 +1,17 @@
+.banner {
+	background-size: cover;
+	height: $banner-height;
+	position: absolute;
+	left: 0;
+	color: #eeeeee;
+	text-align: center;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+
+	&.home-page {
+		background-image: url("/images/home-page-banner.jpg");
+	}
+}
+
+.text {
+	@include vertical-align(40%);
+}
