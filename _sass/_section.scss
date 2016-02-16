@@ -1,6 +1,7 @@
 .section {
 	margin-right: initial !important;
 	overflow: auto;
+	margin-top: 30px;
 
 	&.first {
 		margin-top: calc(#{$banner-height} + 30px);
@@ -8,6 +9,7 @@
 
 	h2 {
 		text-align: center;
+		margin: 30px 0;
 	}
 }
 
@@ -18,7 +20,7 @@
 .box {
 	border: 1px solid $colour-1;
 	text-align: center;
-	margin: 15px;
+	margin: 0 15px 15px 15px;
 	@include border-radius(5px);
 
 	.fa {
