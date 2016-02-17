@@ -1,0 +1,19 @@
+h1 {
+	font-size: 3.5em;
+}
+
+h2 {
+	margin-bottom: 60px;
+}
+
+span {
+	.emphasise {
+
+	}
+}
+
+a {
+	&:hover {
+		color: $link-hover;
+	}
+}

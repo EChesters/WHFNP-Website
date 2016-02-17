@@ -1,13 +1,23 @@
 .section {
 	margin-right: initial !important;
 	overflow: auto;
+	padding: 60px;
+
 
 	&.first {
-		margin-top: calc(#{$banner-height} + 30px);
+		margin-top: $banner-height;
 	}
 
 	h2 {
 		text-align: center;
+	}
+
+	&#volunteers {
+		background-image: url("/images/home-page/home-2.jpg");
+		background-size: cover;
+		color: #fff;
+		left: 0;
+		position: absolute;
 	}
 }
 
@@ -18,7 +28,7 @@
 .box {
 	border: 1px solid $colour-1;
 	text-align: center;
-	margin: 15px;
+	margin: 30px;
 	@include border-radius(5px);
 
 	.fa {

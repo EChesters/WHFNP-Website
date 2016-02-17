@@ -1,0 +1,13 @@
+a.btn {
+	max-width: 250px;
+	padding: 15px 45px;
+	@include border-radius(5px);
+	border: 1px solid #000;
+	font-size: calc(#{$base-font-size} + 2px);
+	text-align: center;
+
+	&.white {
+		color: #fff;
+		border-color: #fff;
+	}
+}
