@@ -6,6 +6,7 @@ a.btn {
 	font-size: calc(#{$base-font-size} + 2px);
 	text-align: center;
 	margin: 30px;
+	text-shadow: none;
 
 	&.white {
 		color: #fff;
