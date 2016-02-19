@@ -1,38 +1,44 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+<footer>
+  <div class="row"> 
+    <div class="col-xs-12 col-md-9 position central">
+      <div id="site-map" class="col-xs-6 col-md-4">
+        <h5>Site map</h5>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Volunteers</a></li>
+          <li><a href="/">Non-Profits</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Events</a></li>
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
+      <div id="know-us" class="col-xs-6 col-md-4">
+        <h5>Get to know us</h5>
+        <ul>
           {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
+            <li><a href="/">{% include icon-twitter.html username=site.twitter_username %}</a></li>
           {% endif %}
+          {% if site.facebook_username %}
+            <li><a href="/">{% include icon-facebook.html username=site.facebook_username %}</a></li>
+          {% endif %}
+          <li><a href="/">Read our Medium blog</a></li>
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+      <div id="get-involved" class="col-xs-6 col-md-4">
+        <h5>Get Involved</h5>
+        <ul>
+          <li><a href="/">Volunteer with us</a></li>
+          <li><a href="/">Work with us</a></li>
+        </ul>
       </div>
+
+      <div class="col-xs-12">
+        <div class="col-xs-12 col-md-7">
+          <p>{{ site.title }}</p>
+        </div>
+      </div>
+
     </div>
-
   </div>
-
 </footer>

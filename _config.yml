@@ -15,6 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
 url:        "/echesters.github.io/WHFNP-Website" # the base hostname & protocol for your site
 twitter_username:   whfnp
 github_username:    echesters
+facebook_username:  womenhack
 
 # Build settings
 markdown: kramdown
