@@ -3,7 +3,7 @@
 	height: $banner-height;
 	position: absolute;
 	left: 0;
-	color: #eeeeee;
+	color: #fff;
 	text-align: center;
 	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 	z-index: 0;
@@ -20,8 +20,11 @@
 	}
 
 	&.home-page {
-		// background-image: url("/images/home-page-banner.jpg");
 		background-image: url("//echesters.github.io/WHFNP-Website/images/home-page-banner.jpg");
+	}
+
+	&.events {
+		background-image: url("//echesters.github.io/WHFNP-Website/images/events-banner.jpg");
 	}
 }
 

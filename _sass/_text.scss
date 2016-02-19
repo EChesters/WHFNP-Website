@@ -21,3 +21,10 @@ a {
 p {
 	font-weight: $font-light;
 }
+
+p.description {
+	text-align: center;
+	font-style: italic;
+	padding-bottom: 30px;
+	color: $grey-color;
+}

@@ -25,4 +25,14 @@ a.btn {
 		}
 	}
 
+	&.pink {
+		border-color: $color-4;
+		color: $color-4;
+
+		&.solid {
+			background-color: $color-4;
+			color: #fff;
+		}
+	}
+
 }
