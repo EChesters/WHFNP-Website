@@ -1,24 +1,29 @@
 footer {
   padding: 30px 0;
   background-color: $grey-color-dark;
-  color: #fff;
+  color: $grey-color-light;
+  font-size: $small-font-size;
 
   ul {
     list-style: none;
     margin-left: 0;
 
-    li a, li a:visited {
-      color: #fff;
+    li { 
+      padding: 5px 0;
 
-      &:hover {
-        color: $link-hover;
+      a, a:visited {
+      color: $grey-color-light;
+
+        &:hover {
+          color: $link-hover;
+        }
       }
     }
   }
 
   h5 {
     text-transform: uppercase;
-    color: $grey-color-light;
+    color: #fff;
     font-size: $small-font-size;
     letter-spacing: 5px;
   }
