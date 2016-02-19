@@ -1,10 +1,10 @@
 .section {
   margin-right: initial !important;
   overflow: hidden;
+  padding: 60px;
 
   &.first {
     margin-top: $banner-height;
-    padding: 60px;
   }
 
   h2 {
@@ -17,6 +17,7 @@
     max-height: 450px;
     background-color: $color-2;
     color: #fff;
+    padding: 0;
 
     a {
       color: #fff;
@@ -40,6 +41,11 @@
 
   .description {
     margin-top: 60px;
+  }
+
+  &.pink {
+    background-color: $color-4;
+    color: #fff;
   }
 }
 
