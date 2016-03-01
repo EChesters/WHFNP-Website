@@ -14,10 +14,13 @@
   &#volunteers, &#non-profits {
     display: flex;
     overflow-x: hidden;
-    max-height: 450px;
     background-color: $color-2;
     color: #fff;
     padding: 0;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
 
     a {
       color: #fff;
@@ -56,6 +59,10 @@
 
 .boxes {
   display: flex;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .box {
@@ -63,6 +70,10 @@
   text-align: center;
   margin: 0 30px 30px 30px;
   @include border-radius(5px);
+
+  @media (max-width: 768px) {
+    margin: 0 0 30px 0;
+  }
 
   .fa {
     font-size: 70px;
