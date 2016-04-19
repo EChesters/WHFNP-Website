@@ -6,11 +6,11 @@ We believe in keeping our projects open source, and here you can even find our m
 Creating prototypes in HTML also allows a more realistic view of the end result. We can then pass this repo to any user and they can interact a lot more easily with working links to other pages. 
 
 ## Tech Stack
-These mockups use HTML, and SASS. 
-To compile the SASS you must have Ruby installed. 
+We are using Jekyll, with the CSS pre-processor, SASS.
 
-For ease of use when making SASS changes use
-`sass --watch`
+To run, use `jekyll serve`
+
+This does have a Ruby dependency.
 
 ## Any questions?
 Tweet us at @WHFNP!
