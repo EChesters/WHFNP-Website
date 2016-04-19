@@ -7,5 +7,9 @@
 		@include dynamic-sizing();
 		display: block;
 		height: 100%;
+
+		@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+			height: 550px;
+		}
 	}
 }
