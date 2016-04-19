@@ -12,3 +12,10 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin dynamic-sizing() {
+  max-height:            190%;
+  background-size:       cover;
+  // height:                auto;
+  width:                 auto;
+}
